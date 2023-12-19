@@ -4,3 +4,4 @@ This repository contains a collection of simple malware techniques and its attem
 | Name                    | Description                                       | Language  |
 |-------------------------|---------------------------------------------------|-----------|
 | Local Payload Injection | Shellcode execution via creation of a new thread  | C         |
+

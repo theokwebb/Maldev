@@ -20,12 +20,12 @@ char* UuidArray[] = {
 
 BOOL UuidDeobfuscation(IN CHAR* UuidArray[], IN SIZE_T NmbrOfElements, OUT PBYTE* ppDAddress, OUT SIZE_T* pDSize) {
 
-	PBYTE		  pBuffer     = NULL,
-				    TmpBuffer   = NULL;
+	PBYTE		pBuffer     = NULL,
+			TmpBuffer   = NULL;
 
-	SIZE_T	  sBuffSize   = NULL;
+	SIZE_T		sBuffSize   = NULL;
 
-	PCSTR		  Terminator  = NULL;
+	PCSTR		Terminator  = NULL;
   
 	NTSTATUS	STATUS      = NULL;
 
@@ -65,12 +65,12 @@ BOOL UuidDeobfuscation(IN CHAR* UuidArray[], IN SIZE_T NmbrOfElements, OUT PBYTE
 
 int main(void) {
 
-	PBYTE		  pDeobfuscatedPayload   = NULL;
-	SIZE_T		sDeobfuscatedSize	     = NULL;
+	PBYTE		pDeobfuscatedPayload	= NULL;
+	SIZE_T		sDeobfuscatedSize	= NULL;
 	
-	PVOID		  pShellcodeAddress      = NULL;
-	PDWORD		lpflOldProtect		     = NULL;
-	HANDLE		hThread				         = NULL;
+	PVOID		pShellcodeAddress	= NULL;
+	PDWORD		lpflOldProtect		= NULL;
+	HANDLE		hThread			= NULL;
 
 	printf("[i] Injecting shellcode to the local process of pid: %d. \n", GetCurrentProcessId());
 	

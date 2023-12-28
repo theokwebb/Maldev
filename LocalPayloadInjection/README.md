@@ -1,3 +1,5 @@
+# LocalPayloadInjection.c
+
 Payload is Msfvenom's calc x64 shellcode and is UUID obfuscated.
 
 It is necessary to include `EXITFUNC=thread` in the Msfvenom command so that the shellcode terminates only the thread instead of the entire process after its spawns calc. I.e.:
